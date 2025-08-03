@@ -3,10 +3,8 @@
 require_once "data/Person.php";
 
 $person = new Person("John Doe", "123 Main St");
-$person->name = "John Doe";
-$person->address = "123 Main St";
-
-var_dump($person);
+$person->sayHello(null);
+$person->info();
 
 echo $person->name . PHP_EOL;
 echo $person->address . PHP_EOL;
